@@ -8,6 +8,9 @@ After `git clone` run in project root.
 ```bash
 make install
 ```
+## Contains
+
+Contains basic setup for `zsh` and `vim`.
 
 ## Resources
 
