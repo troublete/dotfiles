@@ -1,5 +1,5 @@
 # dotfiles
-The allmighty dotfiles. ✨
+> The allmighty dotfiles. ✨
 
 ## Install
 
@@ -19,4 +19,4 @@ make install
 
 ## License
 
-MIT @ Willi Eßer
+MIT © Willi Eßer
