@@ -12,7 +12,7 @@ precmd() {
 
 # imports
 source ~/.aliases
-source ~/.zsh_functions
+source ~/.functions
 
 # setup history
 export HISTSIZE=2000
