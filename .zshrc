@@ -23,3 +23,5 @@ setopt prompt_subst
 
 # setup terminal basics
 export PS1=$'\n%F{033}%T%f – %F{075}%d%f ${vcs_info_msg_0_}\n$ '
+source ~/google-cloud-sdk/completion.zsh.inc 
+source ~/google-cloud-sdk/path.zsh.inc
