@@ -7,7 +7,7 @@ load_deps:
 setup: load_deps
 	ln -fs $(PWD)/.zshrc ~/.zshrc
 	ln -fs $(PWD)/.aliases ~/.aliases
-	ln -fs $(PWD)/.zsh_functions ~/.zsh_functions	
+	ln -fs $(PWD)/.functions ~/.functions	
 	mkdir -p ~/.vim/colors
 	cp $(PWD)/themes/vim/colors/* ~/.vim/colors/
 	ln -fs $(PWD)/.vimrc ~/.vimrc
