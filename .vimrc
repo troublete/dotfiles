@@ -10,10 +10,9 @@ syntax on
 
 " setup plugins
 call plug#begin('~/.vim/plugged')
-Plug 'ayu-theme/ayu-vim'
+Plug 'crusoexia/vim-monokai'
+Plug 'scrooloose/nerdtree'
 call plug#end()
 
-" define ayu customs
-set termguicolors
-let ayucolors="dark"
-colorscheme ayu
+colorscheme monokai 
+autocmd vimenter * NERDTree
