@@ -23,6 +23,9 @@ setopt prompt_subst
 
 # setup terminal basics
 export PS1=$'\n%F{033}%T%f – %F{075}%d%f ${vcs_info_msg_0_}\n$ '
+export GOPATH=$HOME/projects/go1.x
+export PATH=$PATH:$(go env GOPATH)/bin
+export PATH=$PATH:~/bin
 source ~/google-cloud-sdk/completion.zsh.inc 
 source ~/google-cloud-sdk/path.zsh.inc
 
