@@ -20,3 +20,21 @@ Plug 'vim-scripts/AutoClose'
 call plug#end()
 
 colorscheme monokai 
+
+" disable 'easy mode'
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+noremap <ScrollWheelUp> <NOP>
+noremap <S-ScrollWheelUp> <NOP>
+noremap <C-ScrollWheelUp> <NOP>
+noremap <ScrollWheelDown> <NOP>
+noremap <S-ScrollWheelDown> <NOP>
+noremap <C-ScrollWheelDown> <NOP>
+noremap <ScrollWheelLeft> <NOP>
+noremap <S-ScrollWheelLeft> <NOP>
+noremap <C-ScrollWheelLeft> <NOP>
+noremap <ScrollWheelRight> <NOP>
+noremap <S-ScrollWheelRight> <NOP>
+noremap <C-ScrollWheelRight> <NOP>
