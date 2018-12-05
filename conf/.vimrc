@@ -8,6 +8,7 @@ set number relativenumber
 set hlsearch
 set encoding=utf-8
 set fileencoding=utf-8
+filetype plugin on
 syntax on
 
 " setup plugins
@@ -18,7 +19,15 @@ Plug 'luochen1990/rainbow'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-scripts/AutoClose'
 Plug 'tpope/vim-fugitive'
+Plug 'reedes/vim-lexical'
 call plug#end()
+
+augroup lexical
+  autocmd!
+  autocmd FileType markdown,mkd call lexical#init()
+  autocmd FileType textile call lexical#init()
+  autocmd FileType text call lexical#init({ 'spell': 0 })
+augroup END
 
 colorscheme monokai 
 
@@ -39,3 +48,5 @@ noremap <C-ScrollWheelLeft> <NOP>
 noremap <ScrollWheelRight> <NOP>
 noremap <S-ScrollWheelRight> <NOP>
 noremap <C-ScrollWheelRight> <NOP>
+
+let g:lexical#spell = 1
