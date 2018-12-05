@@ -17,6 +17,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'luochen1990/rainbow'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-scripts/AutoClose'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 colorscheme monokai 

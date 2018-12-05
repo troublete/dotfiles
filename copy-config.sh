@@ -1,5 +1,5 @@
 # copy system configuration files to home directory
-for file in ".aliases" ".gitconfig" ".gitignore" ".vimrc" ".zshrc"
+for file in .aliases .gitconfig .gitignore .vimrc .zshrc
 do
-	ln -s "$PWD/conf/$file" "~/$file"
+	ln -fs $PWD/conf/$file ~/$file
 done
