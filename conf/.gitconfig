@@ -1,0 +1,9 @@
+[user]
+	name = Willi Eßer
+	email = willi.esser@troublete.com
+
+[push]
+	default = simple
+
+[core]
+	editor = vim

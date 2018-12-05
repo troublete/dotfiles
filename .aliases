@@ -1,7 +1,0 @@
-alias subl="open -a /Applications/Sublime\ Text.app/"
-alias sudo="sudo "
-alias o="cd ~/others"
-alias p="cd ~/projects"
-alias l="ls -la"
-alias t="cd ~/tooling" 
-alias c="clear"
