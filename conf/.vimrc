@@ -8,6 +8,8 @@ set number relativenumber
 set hlsearch
 set encoding=utf-8
 set fileencoding=utf-8
+set list
+set listchars=tab:--
 filetype plugin on
 syntax on
 
@@ -20,6 +22,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-scripts/AutoClose'
 Plug 'tpope/vim-fugitive'
 Plug 'reedes/vim-lexical'
+Plug 'valloric/youcompleteme'
 call plug#end()
 
 augroup lexical
@@ -50,3 +53,5 @@ noremap <S-ScrollWheelRight> <NOP>
 noremap <C-ScrollWheelRight> <NOP>
 
 let g:lexical#spell = 1
+let g:deoplete#enable_at_startup = 1
+
