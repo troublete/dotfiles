@@ -15,14 +15,16 @@ syntax on
 
 " setup plugins
 call plug#begin('~/.vim/plugged')
-Plug 'pangloss/vim-javascript'
-Plug 'luochen1990/rainbow'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'vim-scripts/AutoClose'
-Plug 'tpope/vim-fugitive'
-Plug 'reedes/vim-lexical'
-Plug 'valloric/youcompleteme'
+Plug 'airblade/vim-gitgutter'
 Plug 'bradford-smith94/quick-scope'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'luochen1990/rainbow'
+Plug 'pangloss/vim-javascript'
+Plug 'reedes/vim-lexical'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'valloric/youcompleteme'
+Plug 'vim-scripts/AutoClose'
 call plug#end()
 
 augroup lexical
