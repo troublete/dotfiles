@@ -15,26 +15,22 @@ syntax on
 
 " setup plugins
 call plug#begin('~/.vim/plugged')
-Plug 'airblade/vim-gitgutter'
 Plug 'bradford-smith94/quick-scope'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'luochen1990/rainbow'
 Plug 'pangloss/vim-javascript'
-Plug 'reedes/vim-lexical'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme'
-Plug 'vim-scripts/AutoClose'
+Plug 'easymotion/vim-easymotion'
+Plug 'kien/rainbow_parentheses.vim'
 call plug#end()
 
-augroup lexical
-  autocmd!
-  autocmd FileType markdown,mkd call lexical#init()
-  autocmd FileType textile call lexical#init()
-  autocmd FileType text call lexical#init({ 'spell': 0 })
-augroup END
+" setup colors for whitespace characters
+hi SpecialKey term=bold ctermfg=238
+hi NonText term=bold ctermfg=238
 
-" disable 'easy mode'
+let mapleader = ","
+
+" setup keymapping
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
@@ -52,7 +48,15 @@ noremap <ScrollWheelRight> <NOP>
 noremap <S-ScrollWheelRight> <NOP>
 noremap <C-ScrollWheelRight> <NOP>
 
-let g:lexical#spell = 1
-hi SpecialKey term=bold ctermfg=238
-hi NonText term=bold ctermfg=238
+map <Leader>l <Plug>(easymotion-bd-jk)
+nmap <Leader>l <Plug>(easymotion-overwin-line)
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+map  <Leader>c <Plug>(easymotion-bd-f)
+nmap <Leader>c <Plug>(easymotion-overwin-f)
 
+" setup runtime scrips
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
