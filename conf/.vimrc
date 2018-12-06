@@ -22,6 +22,7 @@ Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme'
 Plug 'easymotion/vim-easymotion'
 Plug 'kien/rainbow_parentheses.vim'
+Plug 'damage220/vim-finder'
 call plug#end()
 
 " setup colors for whitespace characters
