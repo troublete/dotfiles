@@ -9,7 +9,7 @@ set hlsearch
 set encoding=utf-8
 set fileencoding=utf-8
 set list
-set listchars=tab:--
+set listchars=tab:--,space:.,eol:$
 filetype plugin on
 syntax on
 
@@ -53,5 +53,6 @@ noremap <S-ScrollWheelRight> <NOP>
 noremap <C-ScrollWheelRight> <NOP>
 
 let g:lexical#spell = 1
-let g:deoplete#enable_at_startup = 1
+hi SpecialKey term=bold ctermfg=238
+hi NonText term=bold ctermfg=238
 
