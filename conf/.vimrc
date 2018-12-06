@@ -15,7 +15,6 @@ syntax on
 
 " setup plugins
 call plug#begin('~/.vim/plugged')
-Plug 'crusoexia/vim-monokai'
 Plug 'pangloss/vim-javascript'
 Plug 'luochen1990/rainbow'
 Plug 'ctrlpvim/ctrlp.vim'
@@ -23,6 +22,7 @@ Plug 'vim-scripts/AutoClose'
 Plug 'tpope/vim-fugitive'
 Plug 'reedes/vim-lexical'
 Plug 'valloric/youcompleteme'
+Plug 'bradford-smith94/quick-scope'
 call plug#end()
 
 augroup lexical
@@ -31,8 +31,6 @@ augroup lexical
   autocmd FileType textile call lexical#init()
   autocmd FileType text call lexical#init({ 'spell': 0 })
 augroup END
-
-colorscheme monokai 
 
 " disable 'easy mode'
 noremap <Up> <NOP>
