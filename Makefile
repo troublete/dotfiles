@@ -1,15 +1,14 @@
-.PHONY: setup
+.PHONY: setup pre post
 
-init: prerequisits
-
-setup: 
-	curl -L git.io/antigen > ~/antigen.zsh
+setup: pre
 	$(shell ./copy-config.sh)
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-prerequisits:
+pre:
 	/usr/bin/ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	brew install \
+	brew update
+	brew upgrade
+	brew install -i \
 		ansible \
 		cmake \
 		git \
@@ -21,8 +20,9 @@ prerequisits:
 		python@2 \
 		ruby \
 		vim \
-		webp
-	brew upgrade
+		webp 
+	brew cask install google-cloud-sdk
+	brew install antigen
 
 post:
 	vim -c PlugInstall
