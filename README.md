@@ -4,7 +4,7 @@
 ## Install
 
 ```bash
-make install
+make setup
 ```
 ## License
 
