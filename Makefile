@@ -2,6 +2,7 @@
 
 setup: pre
 	$(shell ./copy-config.sh)
+	$(shell ./copy-commands.sh)
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 pre:

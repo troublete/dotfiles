@@ -28,6 +28,7 @@ Plug 'kien/rainbow_parentheses.vim'
 Plug 'damage220/vim-finder'
 Plug 'ahdinosaur-os/npm.vim'
 Plug 'thiagoalessio/rainbow_levels.vim'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 " setup colors for whitespace characters

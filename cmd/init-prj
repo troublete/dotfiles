@@ -1,0 +1,2 @@
+# set filetype=shell
+cp ./../.editorconfig $PWD
