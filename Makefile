@@ -1,6 +1,8 @@
 .PHONY: setup
 
-setup: prerequisits
+init: prerequisits
+
+setup: 
 	curl -L git.io/antigen > ~/antigen.zsh
 	$(shell ./copy-config.sh)
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -21,3 +23,7 @@ prerequisits:
 		vim \
 		webp
 	brew upgrade
+
+post:
+	vim -c PlugInstall
+	~/.vim/plugged/youcompleteme/install.py
