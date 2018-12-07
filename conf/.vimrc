@@ -9,9 +9,10 @@ set hlsearch
 set encoding=utf-8
 set fileencoding=utf-8
 set list
-set listchars=tab:--,space:.,eol:$
+set listchars=tab:--,eol:$
 set fdm=syntax
 set fdn=2
+set colorcolumn=120
 filetype plugin on
 syntax on
 
@@ -25,11 +26,14 @@ Plug 'valloric/youcompleteme'
 Plug 'easymotion/vim-easymotion'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'damage220/vim-finder'
+Plug 'ahdinosaur-os/npm.vim'
+Plug 'thiagoalessio/rainbow_levels.vim'
 call plug#end()
 
 " setup colors for whitespace characters
-hi SpecialKey ctermfg=236
-hi NonText ctermfg=236
+hi SpecialKey ctermfg=darkgray
+hi NonText ctermfg=darkgray
+hi ColorColumn ctermbg=darkgray
 
 let mapleader = ","
 
@@ -65,9 +69,10 @@ nmap <Leader>c <Plug>(easymotion-overwin-f)
 map <Leader>o zo
 map <Leader>c zc
 map <Leader>0 :set fdn=0
+map <Leader>r :RainbowLevelsToggle<cr>
+
 " setup runtime scrips
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
-
