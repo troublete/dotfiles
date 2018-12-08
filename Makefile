@@ -19,12 +19,13 @@ pre:
 		nvm \
 		python \
 		python@2 \
-		ruby \
+		ruby@2.3 \
 		vim \
-		webp 
+		webp
 	brew cask install google-cloud-sdk
 	brew install antigen
 
 post:
 	vim -c PlugInstall
 	~/.vim/plugged/youcompleteme/install.py
+	~/.vim/plugged/command-t && rake make

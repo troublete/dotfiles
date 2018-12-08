@@ -25,10 +25,10 @@ Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme'
 Plug 'easymotion/vim-easymotion'
 Plug 'kien/rainbow_parentheses.vim'
-Plug 'damage220/vim-finder'
 Plug 'ahdinosaur-os/npm.vim'
 Plug 'thiagoalessio/rainbow_levels.vim'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'vim-scripts/ctrlp.vim'
 call plug#end()
 
 " setup colors for whitespace characters
@@ -37,6 +37,7 @@ hi NonText ctermfg=darkgray
 hi ColorColumn ctermbg=darkgray
 
 let mapleader = ","
+let g:ctrlp_show_hidden = 1
 
 " setup keymapping
 noremap <Up> <NOP>
@@ -69,8 +70,10 @@ nmap <Leader>c <Plug>(easymotion-overwin-f)
 
 map <Leader>o zo
 map <Leader>c zc
-map <Leader>0 :set fdn=0
+map <Leader>0 :set fdn=0<cr>
 map <Leader>r :RainbowLevelsToggle<cr>
+map <Leader>vi :tabe ~/.vimrc<cr>
+map <Leader>p :CtrlPMixed<cr>
 
 " setup runtime scrips
 au VimEnter * RainbowParenthesesToggle
