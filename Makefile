@@ -28,4 +28,3 @@ pre:
 post:
 	vim -c PlugInstall
 	~/.vim/plugged/youcompleteme/install.py
-	~/.vim/plugged/command-t && rake make
