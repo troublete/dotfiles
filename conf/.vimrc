@@ -29,6 +29,7 @@ Plug 'ahdinosaur-os/npm.vim'
 Plug 'thiagoalessio/rainbow_levels.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'vim-scripts/ctrlp.vim'
+Plug 'tpope/vim-tbone'
 call plug#end()
 
 " setup colors for whitespace characters
@@ -63,8 +64,10 @@ noremap <C-ScrollWheelRight> <NOP>
 
 map <Leader>l <Plug>(easymotion-bd-jk)
 nmap <Leader>l <Plug>(easymotion-overwin-line)
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+map <Leader><Leader> <Plug>(easymotion-bd-w)
+nmap <Leader><Leader> <Plug>(easymotion-bd-w)
+map <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-bd-w)
 map  <Leader>c <Plug>(easymotion-bd-f)
 nmap <Leader>c <Plug>(easymotion-overwin-f)
 
@@ -74,6 +77,8 @@ map <Leader>0 :set fdn=0<cr>
 map <Leader>r :RainbowLevelsToggle<cr>
 map <Leader>vi :tabe ~/.vimrc<cr>
 map <Leader>p :CtrlPMixed<cr>
+map <Leader>t :Npm run tap -- -R classic<cr>
+map <Leader>. :w<cr>
 
 " setup runtime scrips
 au VimEnter * RainbowParenthesesToggle
