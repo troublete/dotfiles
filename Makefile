@@ -20,6 +20,7 @@ pre:
 		python \
 		python@2 \
 		ruby@2.3 \
+		tmux \
 		vim \
 		webp
 	brew cask install google-cloud-sdk
