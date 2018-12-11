@@ -15,13 +15,9 @@ map <Leader>o zo
 map <Leader>c zc
 map <Leader>0 :set fdn=0<cr>
 map <Leader>vi :tabe ~/.vimrc<cr>
+map <Leader>vp :tabe ~/.vim-plugins<cr>
+map <Leader>vk :tabe ~/.vim-keymap<cr>
 map <Leader>. :w<cr>
-nmap < [
-nmap > ]
-omap < [
-omap > ]
-xmap < [
-xmap > ]
-
+noremap <Leader>j <c-]>
 source ~/.vim-plugins
 source ~/.vim-keymap
