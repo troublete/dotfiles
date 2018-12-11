@@ -1,3 +1,4 @@
+" vim: set filetype=vim :
 call plug#begin('~/.vim/plugged')
 Plug 'ahdinosaur-os/npm.vim'
 Plug 'bradford-smith94/quick-scope'
