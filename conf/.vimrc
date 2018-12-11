@@ -19,5 +19,6 @@ map <Leader>vp :tabe ~/.vim-plugins<cr>
 map <Leader>vk :tabe ~/.vim-keymap<cr>
 map <Leader>. :w<cr>
 noremap <Leader>j <c-]>
+map <Leader>rr <c-w><c-w>
 source ~/.vim-plugins
 source ~/.vim-keymap
