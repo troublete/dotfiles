@@ -7,6 +7,7 @@ set list listchars=tab:--,eol:$
 set number relativenumber
 set showcmd
 set encoding=utf-8
+set tabstop=3
 
 let mapleader = ","
 
