@@ -23,7 +23,8 @@ pre:
 		ruby@2.3 \
 		tmux \
 		vim \
-		webp
+		webp \
+		ctags-exuberant
 	brew cask install google-cloud-sdk
 	brew install antigen
 
