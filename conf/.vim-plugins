@@ -20,7 +20,7 @@ colorscheme vividchalk
 let g:ctrlp_show_hidden = 1
 
 map <Leader>p :CtrlPMixed<cr>
-map <Leader>t :Npm run tap -- -R classic<cr>
+map <Leader>t :Npm test -- -R classic<cr>
 map <Leader>l <Plug>(easymotion-bd-jk)
 nmap <Leader>l <Plug>(easymotion-overwin-line)
 map <Leader>w <Plug>(easymotion-bd-w)
