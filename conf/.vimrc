@@ -1,4 +1,6 @@
-filetype plugin indent on
+filetype on
+filetype indent on
+filetype plugin on
 syntax on
 set nocompatible
 set autoindent
@@ -9,8 +11,6 @@ set showcmd
 set encoding=utf-8
 set title
 set titlestring=%{expand(\"%:p:h\")}
-au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 let mapleader = ","
 

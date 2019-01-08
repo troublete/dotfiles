@@ -1,26 +1,15 @@
 " vim: set filetype=vim :
 call plug#begin('~/.vim/plugged')
-Plug 'ahdinosaur-os/npm.vim'
 Plug 'bradford-smith94/quick-scope'
 Plug 'easymotion/vim-easymotion'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'mileszs/ack.vim'
-Plug 'pangloss/vim-javascript'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-jdaddy'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-tbone'
-Plug 'tpope/vim-vividchalk'
 Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-scripts/ctrlp.vim'
 call plug#end()
 
-colorscheme vividchalk
-let g:ctrlp_show_hidden = 1
-
-map <Leader>p :CtrlPMixed<cr>
-map <Leader>t :Npm test -- -R classic<cr>
 map <Leader>l <Plug>(easymotion-bd-jk)
 nmap <Leader>l <Plug>(easymotion-overwin-line)
 map <Leader>w <Plug>(easymotion-bd-w)
