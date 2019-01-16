@@ -8,6 +8,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-tbone'
 Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline'
+Plug 'thanethomson/vim-jenkinsfile'
 call plug#end()
 
 map <Leader>l <Plug>(easymotion-bd-jk)
