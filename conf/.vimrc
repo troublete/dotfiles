@@ -23,3 +23,6 @@ map <Leader>rr <c-w><c-w>
 
 source ~/.vim-plugins
 source ~/.vim-keymap
+
+colorscheme gruvbox
+set background=dark

@@ -1,19 +1,12 @@
 " vim: set filetype=vim :
 call plug#begin('~/.vim/plugged')
-Plug 'bradford-smith94/quick-scope'
-Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-jdaddy'
+Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-tbone'
 Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline'
-Plug 'thanethomson/vim-jenkinsfile'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
-map <Leader>l <Plug>(easymotion-bd-jk)
-nmap <Leader>l <Plug>(easymotion-overwin-line)
-map <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-bd-w)
-map  <Leader>c <Plug>(easymotion-bd-f)
-nmap <Leader>c <Plug>(easymotion-overwin-f)
+let g:gruvbox_italic=1
