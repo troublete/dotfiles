@@ -26,3 +26,4 @@ source ~/.vim-keymap
 
 colorscheme gruvbox
 set background=dark
+

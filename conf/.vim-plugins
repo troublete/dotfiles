@@ -1,12 +1,11 @@
 " vim: set filetype=vim :
 call plug#begin('~/.vim/plugged')
+Plug 'isruslan/vim-es6'
+Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-jdaddy'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline'
-Plug 'morhetz/gruvbox'
 call plug#end()
-
-let g:gruvbox_italic=1
