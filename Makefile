@@ -1,33 +1,18 @@
-.PHONY: setup pre post
+.DEFAULT_GOAL: all
 
-setup: pre
-	$(shell ./copy-config.sh)
-	cp -f conf/.gitconfig ~/.gitconfig
-	$(shell ./copy-commands.sh)
-	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+all: setup-git setup-zsh setup-vim setup-brew
 
-pre:
-	/usr/bin/ruby -e "$$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-	brew update
-	brew upgrade
-	brew install -i \
-		ansible \
-		cmake \
-		git \
-		go \
-		gource \
-		imagemagick \
-		nvm \
-		python \
-		python@2 \
-		ruby@2.3 \
-		tmux \
-		vim \
-		webp \
-		ctags-exuberant
-	brew cask install google-cloud-sdk
-	brew install antigen
+setup-zsh:
+	cd .config && find .z* -exec ln -sf ${PWD}/.config/{} ~/{} \;
 
-post:
-	vim -c PlugInstall
-	~/.vim/plugged/youcompleteme/install.py
+setup-git:
+	cd .config && find .git* -exec ln -sf ${PWD}/.config/{} ~/{} \;
+
+setup-ctags:
+	cd .config && find .ctags -exec ln -sf ${PWD}/.config/{} ~/{} \;
+
+setup-vim:
+	cd .config && find .vim* -exec ln -sf ${PWD}/.config/{} ~/{} \;
+
+setup-brew:
+	cd .config && find Brewfile -exec ln -sf ${PWD}/.config/{} ~/{} \;
