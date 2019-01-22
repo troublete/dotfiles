@@ -17,3 +17,9 @@
 	conflictstyle = diff3
 	prompt = false
 
+[pull]
+	rebase = true
+
+[init]
+	template = ~/.git_template
+
