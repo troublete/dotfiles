@@ -13,11 +13,16 @@ set showcmd
 set encoding=utf-8
 set title
 set titlestring=%{expand(\"%:p:h\")}
+set path+=**
+set wildmenu
 
 let mapleader = ","
 
 " Section: Keymap
-map <Leader>vi :tabe ~/.vimrc<cr>
+nnoremap <Leader>vi :tabe ~/.vimrc<cr>
+inoremap <Leader><Leader> <Esc> :w<cr>
+
+" Disable easy mode
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
@@ -39,6 +44,9 @@ noremap <ScrollWheelRight> <NOP>
 noremap <S-ScrollWheelRight> <NOP>
 noremap <C-ScrollWheelRight> <NOP>
 
+" Section: Commands
+command! MakeTags !ctags -R .
+
 " Section: Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'isruslan/vim-es6'
@@ -47,7 +55,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-jdaddy'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
-Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline'
 call plug#end()
 

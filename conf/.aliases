@@ -1,4 +1,0 @@
-alias ll="ls -la"
-alias c="clear"
-alias -s {yaml,yml,js,json}=vim
-alias v="vim -c Files"
