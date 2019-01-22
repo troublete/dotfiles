@@ -16,9 +16,6 @@ set titlestring=%{expand(\"%:p:h\")}
 
 let mapleader = ","
 
-colorscheme gruvbox
-set background=dark
-
 " Section: Keymap
 map <Leader>vi :tabe ~/.vimrc<cr>
 noremap <Up> <NOP>
@@ -53,3 +50,6 @@ Plug 'tpope/vim-surround'
 Plug 'valloric/youcompleteme'
 Plug 'vim-airline/vim-airline'
 call plug#end()
+
+colorscheme gruvbox
+set background=dark
