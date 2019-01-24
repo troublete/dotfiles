@@ -59,6 +59,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-jdaddy'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-tbone'
 Plug 'vim-airline/vim-airline'
 call plug#end()
 
