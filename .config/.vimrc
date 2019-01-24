@@ -15,12 +15,16 @@ set title
 set titlestring=%{expand(\"%:p:h\")}
 set path+=**
 set wildmenu
+set wildignore+=**/node_modules/** 
+set wildignore+=**/.git/**
+set wildignore+=**/bower_components/**
 
 let mapleader = ","
 
 " Section: Keymap
 nnoremap <Leader>vi :tabe ~/.vimrc<cr>
 inoremap <Leader><Leader> <Esc> :w<cr>
+nnoremap <Leader><Leader> <Esc> :w<cr>
 
 " Disable easy mode
 noremap <Up> <NOP>
@@ -45,7 +49,7 @@ noremap <S-ScrollWheelRight> <NOP>
 noremap <C-ScrollWheelRight> <NOP>
 
 " Section: Commands
-command! MakeTags !ctags -R .
+command! MakeTags !ctags -R --exclude=node_modules --exclude=bower_components --exclude=.git .
 
 " Section: Plugins
 call plug#begin('~/.vim/plugged')
