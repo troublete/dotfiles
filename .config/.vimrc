@@ -26,6 +26,13 @@ nnoremap <Leader>vi :tabe ~/.vimrc<cr>
 inoremap <Leader><Leader> <Esc> :w<cr>
 nnoremap <Leader><Leader> <Esc> :w<cr>
 
+" Section: Tmux Keymap
+nnoremap <Leader>tm :Tmux split-window -d -h -p 40<cr>:Tmux send-keys -t 1 cd\ $PWD ENTER<cr>
+nnoremap <Leader>tmc :Tmux send-keys -t 1 C-c<cr>
+nnoremap <Leader>tmr :Tmux send-keys -t 1 C-c<cr>:Tmux send-keys -t 1 UP ENTER<cr>
+nnoremap <Leader>du :Tmux send-keys -t 1 C-c<cr>:Tmux send-keys -t 1 'docker-compose down && docker-compose up -d && docker-compose logs -f' ENTER<cr>
+nnoremap <Leader>dr :Tmux send-keys -t 1 C-c<cr>:Tmux send-keys -t 1 'docker-compose restart && docker-compose logs -f' ENTER<cr>
+
 " Disable easy mode
 noremap <Up> <NOP>
 noremap <Down> <NOP>
