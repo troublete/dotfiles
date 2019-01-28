@@ -32,6 +32,8 @@ nnoremap <Leader>tmc :Tmux send-keys -t 1 C-c<cr>
 nnoremap <Leader>tmr :Tmux send-keys -t 1 C-c<cr>:Tmux send-keys -t 1 UP ENTER<cr>
 nnoremap <Leader>du :Tmux send-keys -t 1 C-c<cr>:Tmux send-keys -t 1 'docker-compose down && docker-compose up -d && docker-compose logs -f' ENTER<cr>
 nnoremap <Leader>dr :Tmux send-keys -t 1 C-c<cr>:Tmux send-keys -t 1 'docker-compose restart && docker-compose logs -f' ENTER<cr>
+nnoremap <Leader>ni :Tmux send-keys -t 1 C-c<cr>:Tmux send-keys -t 1 'npm install' ENTER<cr>
+nnoremap <Leader>mt :Tmux send-keys -t 1 C-c<cr>:Tmux send-keys -t 1 'make test' ENTER<cr>
 
 " Disable easy mode
 noremap <Up> <NOP>
@@ -60,6 +62,7 @@ command! MakeTags !ctags -R --exclude=node_modules --exclude=bower_components --
 
 " Section: Plugins
 call plug#begin('~/.vim/plugged')
+Plug 'digitaltoad/vim-pug'
 Plug 'isruslan/vim-es6'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-commentary'
