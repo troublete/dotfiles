@@ -1,2 +1,2 @@
-colorscheme carbonized-light
+colorscheme seoul256-light
 

@@ -20,4 +20,5 @@ brew 'vim'
 brew 'zsh'
 
 cask 'google-cloud-sdk'
+cask 'macvim'
 cask 'sublime-text'
