@@ -10,3 +10,4 @@ source ~/google-cloud-sdk/completion.zsh.inc
 source ~/google-cloud-sdk/path.zsh.inc
 
 alias c=clear
+alias gvim=open\ -a\ MacVim.app\ .

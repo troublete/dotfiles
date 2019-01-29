@@ -77,7 +77,9 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-tbone'
 Plug 'vim-airline/vim-airline'
 Plug 'nightsense/carbonized'
+Plug 'nightsense/cosmic_latte'
 call plug#end()
 
 colorscheme gruvbox
 set background=dark
+AirlineTheme gruvbox
