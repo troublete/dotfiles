@@ -25,6 +25,7 @@ let mapleader = ","
 nnoremap <Leader>vi :tabe ~/.vimrc<cr>
 inoremap <Leader><Leader> <Esc> :w<cr>
 nnoremap <Leader><Leader> <Esc> :w<cr>
+nnoremap <Leader>b i<cr><Esc>w
 
 " Section: Tmux Keymap
 nnoremap <Leader>tm :Tmux split-window -d -h -p 40<cr>:Tmux send-keys -t 1 cd\ $PWD ENTER<cr>
@@ -60,10 +61,14 @@ noremap <C-ScrollWheelRight> <NOP>
 " Section: Commands
 command! MakeTags !ctags -R --exclude=node_modules --exclude=bower_components --exclude=.git .
 
+" Section: Abbreviation
+abbreviate _itin _itinerary:
+
 " Section: Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'digitaltoad/vim-pug'
 Plug 'isruslan/vim-es6'
+Plug 'junegunn/seoul256.vim'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-jdaddy'
