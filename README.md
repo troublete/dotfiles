@@ -32,5 +32,11 @@ Links all files to `~`, marks the initial setup.
 * **deps** 
 Will install global brew formulas.
 
+## Notes
+
+### Recommendations
+
+* [rvm](https://rvm.io) - Ruby version manager, similar to `nvm` (which is installed by brew)
+
 ## License
 © 2017-2019 MIT Willi Eßer
