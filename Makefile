@@ -3,4 +3,4 @@
 all: link
 
 link:
-	cd .config && find .* -type f -maxdepth 0 -exec ln -sf ${PWD}/.config/{} ~/{} \;
+	find . -name ".*" ! -path "./.git" ! -path "./.gitignore" ! -path "." -maxdepth 1 -exec ln -sf ${PWD}/{} ~/{} \;

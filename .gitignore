@@ -1,2 +1,9 @@
-themes
 !.keep
+.DS_Store
+*.swp
+.env
+.eslintcache
+.nyc_output
+node_modules
+npm-debug.log*
+tags

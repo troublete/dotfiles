@@ -4,6 +4,7 @@ tap 'homebrew/services'
 tap 'caskroom/cask'
 
 brew 'ansible'
+brew 'awk'
 brew 'ctags'
 brew 'docker'
 brew 'git'
