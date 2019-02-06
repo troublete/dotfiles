@@ -1,8 +1,3 @@
-" Section: Color scheme gvim
-colorscheme Tomorrow
-set background=light
-AirlineTheme cosmic_latte_light
-
 " Section: Tmux gvim
 nnoremap <Leader>tm :Tmux split-window -d -h -p 40<cr>:Tmux send-keys -t 0 cd\ $PWD ENTER<cr>
 nnoremap <Leader>tmc :Tmux send-keys -t 0 C-c<cr>
