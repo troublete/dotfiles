@@ -1,11 +1,36 @@
 # dotfiles
-> Necessary files for a new system setup
+> essential setup of dotfiles for new UNIX (preferably macOS) environment
 
-## Install
+## Quickstart
 
-```bash
-make setup
+```sh
+make
 ```
-## License
 
-MIT © Willi Eßer
+## Requirements
+
+I'd recommend to have following utilities installed, since the full setup
+requires them to be available.
+
+### Required
+* GNU `make` (the initial linking is defined as a make target, for most UNIX
+  system `make` should be available anyway)
+* `find(1)` (required by make target to link files, should be available on most UNIX systems anyway)
+* `ln(1)` (required by make target to link files, should be available on most UNIX systems anyway)
+
+### Optional
+* [Homebrew](https://brew.sh) (a global `.Brewfile` will be linked aswell which
+  installs some necessities)
+
+## Targets
+
+* **all** (default): *link* *deps*
+
+* **link**
+Links all files to `~`, marks the initial setup.
+
+* **deps** 
+Will install global brew formulas.
+
+## License
+© 2017-2019 MIT Willi Eßer
