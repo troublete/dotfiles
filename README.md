@@ -36,7 +36,7 @@ Will install global brew formulas.
 
 ### Recommendations
 
-* [rvm](https://rvm.io) - Ruby version manager, similar to `nvm` (which is installed by brew)
+* [rvm](https://rvm.io) - Ruby version manager, similar to `nvm` (which is contained within `.Brefile`)
 
 ## License
 © 2017-2019 MIT Willi Eßer
