@@ -66,9 +66,9 @@ abbreviate _itin _itinerary:
 
 " Section: Plugins
 call plug#begin('~/.vim/plugged')
+Plug 'chriskempson/tomorrow-theme'
 Plug 'digitaltoad/vim-pug'
 Plug 'isruslan/vim-es6'
-Plug 'junegunn/seoul256.vim'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-jdaddy'
@@ -76,8 +76,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-tbone'
 Plug 'vim-airline/vim-airline'
-Plug 'nightsense/carbonized'
-Plug 'nightsense/cosmic_latte'
 call plug#end()
 
 colorscheme gruvbox
