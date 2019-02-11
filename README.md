@@ -1,5 +1,5 @@
 # dotfiles
-> essential setup of dotfiles for new UNIX (preferably macOS) environment
+> essential setup of dotfiles for new Unix-like (preferably macOS) environment
 
 ## Quickstart
 
@@ -12,8 +12,8 @@ I'd recommend to have following utilities installed, since the full setup
 requires them to be available.
 
 ### Required
-* `make` (the initial linking is defined as a make target, for most UNIX
-  system `make` should be available anyway)
+* `make` (the initial linking is defined as a make target, for most Unix-like
+  systems `make` should be available anyway)
 * `find(1)` (required by make target to link files, should be available on most UNIX systems anyway)
 * `ln(1)` (required by make target to link files, should be available on most UNIX systems anyway)
 
