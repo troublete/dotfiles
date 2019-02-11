@@ -1,6 +1,6 @@
 # Section: env vars
 set path=($path $home/bin)
-set prompt=\\n%c0\\n`echo pid:$$`\ `whoami`@`hostname`\$\ 
+set prompt=\\n`date "+%H:%m"`\ %c0\\n`echo pid:$$`\ %B`whoami`%b@`hostname`\$\ 
 
 # Section: alias
 alias l "ls -la | awk '{ print "\$9" }' | pr -l1 -2"
