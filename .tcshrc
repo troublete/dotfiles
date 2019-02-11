@@ -1,0 +1,7 @@
+# Section: env vars
+set path=($path $home/bin)
+set prompt=\\n`pwd`\\n`echo pid:$$`\ `whoami`@`hostname`\$\ 
+
+# Section: alias
+alias l "ls -la | awk '{ print "\$9" }'"
+alias c clear

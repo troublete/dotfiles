@@ -6,4 +6,4 @@ link:
 	find . -name ".*" ! -path "./.git" ! -path "." -maxdepth 1 -exec ln -sf ${PWD}/{} ~/{} \;
 
 deps:
-	brew bundle --global
+	brew bundle --global > /dev/null &
