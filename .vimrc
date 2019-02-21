@@ -63,6 +63,7 @@ command! MakeTags !ctags -R --exclude=node_modules --exclude=bower_components --
 
 " Section: Abbreviation
 abbreviate _itin _itinerary:
+abbreviate (c) ©
 
 " Section: Plugins
 call plug#begin('~/.vim/plugged')
