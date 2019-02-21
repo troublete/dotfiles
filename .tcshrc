@@ -1,8 +1,9 @@
 # Section: env vars
 set path=($path $home/bin)
-set prompt=\\n`date "+%H:%m"`\ %c0\\n`echo pid:$$`\ %B`whoami`%b@`hostname`\$\ 
+set prompt=\\n%T\ %c0\\n`echo pid:$$`\ %B`whoami`%b@`hostname`\$\ 
+set prompt2=
 set autolist
 
 # Section: alias
-alias l "ls -la | awk '{ print "\$9" }' | pr -l1 -2"
+alias l "ls -la | awk 'NR > 1 { print "\$9", "\$1" }' | pr -l1 -2"
 alias c clear
