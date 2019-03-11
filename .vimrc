@@ -69,6 +69,7 @@ abbreviate (c) ©
 call plug#begin('~/.vim/plugged')
 Plug 'chriskempson/tomorrow-theme'
 Plug 'digitaltoad/vim-pug'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'isruslan/vim-es6'
 Plug 'morhetz/gruvbox'
 Plug 'tpope/vim-commentary'
