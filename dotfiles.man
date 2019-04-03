@@ -1,0 +1,9 @@
+.TH dotfiles ""
+essential files for a Unix-like setup (macOs preferred)
+
+
+.TS
+tab(;) allbox;
+a;b
+c;d
+.TE
