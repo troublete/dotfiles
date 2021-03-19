@@ -10,3 +10,9 @@ export NVM_DIR="$HOME/.nvm"
 
 alias l="ls -la | awk 'NR > 1 { print "\$9", "\$1" }' | pr -l1 -2"
 alias c=clear
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
