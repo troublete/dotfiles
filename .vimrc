@@ -7,7 +7,7 @@ syntax on
 set nocompatible
 set autoindent
 set incsearch
-set list listchars=tab:--,eol:$
+set list listchars=space:.,tab:--,eol:$
 set number relativenumber
 set showcmd
 set encoding=utf-8
@@ -15,11 +15,16 @@ set title
 set titlestring=%{expand(\"%:p:h\")}
 set path+=**
 set wildmenu
-set wildignore+=**/node_modules/** 
+set wildignore+=**/node_modules/**
 set wildignore+=**/.git/**
 set wildignore+=**/bower_components/**
 
 let mapleader = ","
+
+" dont write backups
+ set nobackup
+ set noswapfile
+ set nowritebackup
 
 " Section: Keymap
 nnoremap <Leader>vi :tabe ~/.vimrc<cr>
@@ -62,7 +67,6 @@ noremap <C-ScrollWheelRight> <NOP>
 command! MakeTags !ctags -R --exclude=node_modules --exclude=bower_components --exclude=.git .
 
 " Section: Abbreviation
-abbreviate _itin _itinerary:
 abbreviate (c) ©
 
 " Section: Plugins
@@ -72,12 +76,16 @@ Plug 'digitaltoad/vim-pug'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'isruslan/vim-es6'
 Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-bundler'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-haml'
 Plug 'tpope/vim-jdaddy'
+Plug 'tpope/vim-rails'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-tbone'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-ruby/vim-ruby'
 call plug#end()
 
 colorscheme gruvbox
