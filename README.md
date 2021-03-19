@@ -36,7 +36,8 @@ Will install global brew formulas.
 ### Recommendations
 
 * [rvm](https://rvm.io) - Ruby version manager, similar to `nvm` (which is contained within `.Brefile`)
-* Using `tcsh`, which is already installed on macOS
+* Using `tcsh` or `bash`, which is already installed on macOS
+* Install `fzf` completions with `$(brew --prefix)/opt/fzf/install`
 
 ## License
 © 2017-2019 MIT Willi Eßer
